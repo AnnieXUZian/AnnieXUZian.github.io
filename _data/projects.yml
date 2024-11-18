@@ -1,0 +1,29 @@
+- project_1:
+  name: "Course Recommendation App"
+  summary: "a personalized course recommendation platform using a Graph Neural Network (GNN) to capture student-course interactions and make predcitions."
+  highlights: 
+    - "Built an ETL pipeline with Python to process over 40K student-course records efficiently, using SQL for data extraction and transformation." 
+    - "Trained and fine-tuned a heterogeneous graph neural network (HetGNN) for course grade prediction using PyTorch, improving the model prediction accuracy by 20%."
+    - "Developed various backend APIs to interact with the HetGNN model, MySQL database and perform complex logic."
+  startDate: "2023-06"
+  endDate: "2024-05"
+
+- project_2:
+  name: "Language Model Evaluation by Natural Language Processing"
+  summary: "a nine-dataset evaluation framework to assess language model performance in the financial domain."
+  highlights: 
+    - "Compared the performance of encoder-only language models and decoder-only language models, such as Bert and GPT, on financial NLP tasks and concluded the pros and cons of different models."
+    - "Investigated the efficacy of in-context learning for ChatGPT with different sample selection strategies, finding that in-context learning is more effective for complex tasks."
+  startDate: "2023-05"
+  endDate: "2023-08"
+
+- project_2:
+  name: "Interactive Data Storytelling in VR"
+  summary: "an immersive data story in VR with different data representations and user-environment interactions to communicate health risk information to the public"
+  highlights: 
+    - "Implemented an interactive VR story and user interface in Unity using C#, improving user situation awareness of health risks by 50% compared with traditional desktop presentations."
+    - "Conducted three rounds of user studies with 66 participants, employing A/B testing to evaluate user interactions with the VR data story, gathering valuable feedback for further improvements."
+    - "Summarized top design elements by analyzing and visualizing experiment data using Matplotlib, Pandas and NumPy."
+  startDate: "2022-05"
+  endDate: "2022-09"
+  github: "https://github.com/stonycat/A-Case-of-Immersive-Data-Story"

@@ -1,35 +1,41 @@
-<div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
+<div class="cv">
+  {% for content in site.data.projects %} 
+    <div class="card mt-3 p-3">
+      <div> 
+            <ul class="card-text font-weight-light list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+                      {% if content.startDate %}
+                        {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+                        {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+                        {% assign date = startDate | append: ' - ' %}
+                        {% assign date = date | append: endDate %}
+                      {% else %}
+                        {% assign date = '' %}
+                      {% endif %}
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
+                    </div>
+                    <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+                      <h6 class="title font-weight-bold ml-1 ml-md-4">
+                        {{ content.name }}
+                        {% if content.github %}
+                          <a href="{{content.github}}">[GitHub]</a>
+                        {% endif %}
+                      </h6>
+                      <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
+                      <ul class="items">
+                        {% for item in content.highlights %}
+                          <li>
+                            <span class="item">{{ item }}</span>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+            </ul>
       </div>
     </div>
-  </a>
+  {% endfor %}
 </div>
