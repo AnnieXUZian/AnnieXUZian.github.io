@@ -12,14 +12,14 @@ layout: default
               <div class="contact-note">{{ site.contact_note }}</div>
             </div>
         {% endif %}
-    
+    <div class=float-left">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        <span class="font-weight-bold float">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
-          <!-- Social -->
+    </div>
       
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
