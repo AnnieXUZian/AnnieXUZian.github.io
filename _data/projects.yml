@@ -7,6 +7,7 @@
     - "Developed various backend APIs to interact with the HetGNN model, MySQL database and perform complex logic."
   startDate: "2023-06"
   endDate: "2024-05"
+  report: "https://drive.google.com/file/d/1u1gkZu_5SCcFQTaZu19aEDKpJ_nRczuI/view?usp=sharing"
 
 - project_2:
   name: "Language Model Evaluation by Natural Language Processing"
@@ -16,8 +17,9 @@
     - "Investigated the efficacy of in-context learning for ChatGPT with different sample selection strategies, finding that in-context learning is more effective for complex tasks."
   startDate: "2023-05"
   endDate: "2023-08"
+  paper: "https://aclanthology.org/2023.findings-emnlp.58/"
 
-- project_2:
+- project_3:
   name: "Interactive Data Storytelling in VR"
   summary: "an immersive data story in VR with different data representations and user-environment interactions to communicate health risk information to the public"
   highlights: 
