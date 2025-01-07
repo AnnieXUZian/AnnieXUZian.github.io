@@ -11,7 +11,7 @@
 
 - project_2:
   name: "Course Recommendation App"
-  summary: "a personalized course recommendation platform using a Graph Neural Network (GNN) to capture student-course interactions and make predcitions."
+  summary: "a personalized course recommendation platform using a Graph Neural Network (GNN) to capture student-course interactions and make predictions."
   highlights: 
     - "Built an ETL pipeline with Python to process over 40K student-course records efficiently, using SQL for data extraction and transformation." 
     - "Trained and fine-tuned a heterogeneous graph neural network (HetGNN) for course grade prediction using PyTorch, improving the model prediction accuracy by 20%."
