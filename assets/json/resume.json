@@ -45,7 +45,7 @@
       "startDate": "2024-09-01",
       "endDate": "2025-12-01",
       "score": "4",
-      "courses": ["Theory of Relativity"]
+      "courses": ["Applied Machine Learning","Applied Deep Learning", "Exploratory Data Analysis & Data Visualization", "Computer Systems for Data", "Algorithms for Data Science", "Statistical Inference & Modeling"]
     },
     {
       "institution": "the Hong Kong University of Science and Technolog (HKUST)",
@@ -56,7 +56,7 @@
       "startDate": "2020-09-01",
       "endDate": "2024-07-31",
       "score": "4.3",
-      "courses": ["Theory of Relativity"]
+      "courses": ["OOP& Data Structures", "Machine Learning", "Statistics & Probability", "Algorithms", "Time Series", "Databases"]
     }
   ],
   
