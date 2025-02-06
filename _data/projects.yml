@@ -2,7 +2,7 @@
   name: "NYC Urban Park Ranger Animal Condition Analysis"
   summary: "used various exploratory data analysis and visualization techniques to analyze the Urban Park Ranger Animal Condition Response dataset and gained valuable insights"
   highlights: 
-    - "Analze missing values and discover patterns in location, time and animal class with different data visualization techniques in R.
+    - "Analze missing values and discover patterns in location, time and animal class with different data visualization techniques in R."
     - "Build an interactive graph in D3 to enhance user engagement"
   startDate: "2024-09"
   endDate: "2024-12"
